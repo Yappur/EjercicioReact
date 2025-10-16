@@ -1,12 +1,12 @@
-import BuscadorUsuarios from "./components/BuscadorUsuarios";
-import Catalogo from "./components/Catalogo";
+import { BrowserRouter as Router } from "react-router-dom";
+import RoutesViews from "./routes/RoutesView.jsx";
 
 function App() {
   return (
     <>
-      <Catalogo />
-      <hr />
-      <BuscadorUsuarios />
+      <Router>
+        <RoutesViews />
+      </Router>
     </>
   );
 }
